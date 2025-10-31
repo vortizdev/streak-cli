@@ -1,0 +1,6 @@
+[project]
+name = "streak"
+version = "0.1.0"
+description = "Simple habit tracker CLI"
+requires-python = ">=3.12"
+dependencies = ["rich"]
