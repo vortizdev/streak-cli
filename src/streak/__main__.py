@@ -2,7 +2,7 @@ import os
 from rich.console import Console
 from rich.table import Table
 from pathlib import Path
-from src.streak import commands
+from src.streak import commands, __version__
 
 console = Console()
 DEFAULT_DATA = Path(__file__).parent.parent.parent / "data.json"
@@ -11,6 +11,7 @@ DATA_PATH = Path(os.environ.get("STREAK DATA", str(DEFAULT_DATA)))
 def main():
     import argparse
     parser = argparse.ArgumentParser(prog="streak", description="Simple habit tracker")
+    parser.add_argument("--version", action="version", version=f"streak {__version__}")
     sub = parser.add_subparsers(dest="command")
     
     add_p = sub.add_parser("add", help="Add a new habit")

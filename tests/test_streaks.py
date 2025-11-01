@@ -1,4 +1,4 @@
-from src.streak import commands
+from streak import commands
 from datetime import date, timedelta
 from pathlib import Path
 

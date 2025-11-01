@@ -1,5 +1,5 @@
 import json 
-from src.streak import storage
+from streak import storage
 
 def test_save_and_load(tmp_path):
     file_path = tmp_path / "data.json"

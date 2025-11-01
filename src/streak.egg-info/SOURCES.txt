@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/streak/__init__.py
+src/streak/__main__.py
+src/streak/commands.py
+src/streak/storage.py
+src/streak.egg-info/PKG-INFO
+src/streak.egg-info/SOURCES.txt
+src/streak.egg-info/dependency_links.txt
+src/streak.egg-info/entry_points.txt
+src/streak.egg-info/requires.txt
+src/streak.egg-info/top_level.txt
+tests/test_commands.py
+tests/test_integration_cli.py
+tests/test_storage.py
+tests/test_streaks.py

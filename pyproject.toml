@@ -1,6 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "streak"
 version = "0.1.0"
 description = "Simple habit tracker CLI"
+authors = [{ name = "Victor Ortiz" }]
+readme = "README.md"
 requires-python = ">=3.12"
 dependencies = ["rich"]
+
+[project.scripts]
+streak = "streak.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"] 

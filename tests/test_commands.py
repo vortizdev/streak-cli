@@ -1,4 +1,4 @@
-from src.streak import commands
+from streak import commands
 from pathlib import Path
 
 def test_add_and_list(tmp_path):
