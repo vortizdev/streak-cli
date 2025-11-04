@@ -1,5 +1,7 @@
 # Streak - Habit Tracker CLI
 
+![Tests](https://github.com/your-user-/streak-cli/actions/workflows/tests.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue)
 A simple command-line application built in Python that helps you **track daily habits and tasks**.
 Add new habits, list your current ones, and mark them as completed - all from your terminal.
 
@@ -37,9 +39,13 @@ cd streak-cli
 python -m venv .venv
 .venv\Scripts\activate # On Windows
 
-### 3. Install Dependencies
+### 3. Install locally
 '''bash
-pip install -r requirements.txt
+pip install -e .
+
+### 4. Version
+'''bash
+python -m streak --version
 
 ## Running Tests
 '''bash
